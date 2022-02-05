@@ -15,10 +15,82 @@ Information on the standard DIMACS CNF format can be found [here](http://logic.p
   
 To get zChaff, download one of the following files:  
 
-| &nbsp; | Instructions | Tested On |
-| [zChaff binary for Linux]({{< baseurl >}}/resources/zchaff2001217linux) |  {{< br >}}{{< br >}} 1.  Download the gzipped file{{< br >}}2.  Execute: gunzip zchaff.2001.2.17.linux.gz{{< br >}}3.  Execute: chmod +x zchaff.2001.2.17.linux{{< br >}}4.  To Run: ./zchaff.2001.2.17.linux ;test1.dimacs {{< br >}}{{< br >}}  | RedHat Linux 6.2, Debian GNU/Linux 2.4.9, Mandrake 8.0 |
-| [zChaff binary for Solaris]({{< baseurl >}}/resources/zchaff2001217solaris) |  {{< br >}}{{< br >}} 1.  Download the gzipped file{{< br >}}2.  Execute: gunzip zchaff.2001.2.17.solaris.gz{{< br >}}3.  Execute: chmod +x zchaff.2001.2.17.solaris{{< br >}}4.  To Run: ./zchaff.2001.2.17.solaris test1.dimacs {{< br >}}{{< br >}}  | Athena |
-| [zChaff C++ source code]({{< baseurl >}}/resources/zchaff2001217srctar) |  {{< br >}}{{< br >}} 1.  Download the gzipped tar file{{< br >}}2.  Execute: gunzip zchaff.2001.2.17.src.tar.gz{{< br >}}3.  Execute: tar -xvf zchaff.2001.2.17.src.tar{{< br >}}4.  Execute: make  {{< br >}}    or  {{< br >}}    make TARGET{{< br >}}5.  To Run: ./asap test1.dimacs {{< br >}}{{< br >}}  | Compiles and runs on Debian GNU/Linux 2.4.9 and Mandrake 8.0, but not on RedHat 6.2.  {{< br >}}Requires libstdc++-libc6.1-2.so.3 
+{{< tableopen >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+Instructions
+{{< tdclose >}}
+{{< tdopen >}}
+Tested On
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+[zChaff binary for Linux]({{< baseurl >}}/resources/zchaff2001217linux)
+{{< tdclose >}}
+{{< tdopen >}}
+
+
+1.  Download the gzipped file
+2.  Execute: gunzip zchaff.2001.2.17.linux.gz
+3.  Execute: chmod +x zchaff.2001.2.17.linux
+4.  To Run: ./zchaff.2001.2.17.linux ;test1.dimacs
+
+
+{{< tdclose >}}
+{{< tdopen >}}
+RedHat Linux 6.2, Debian GNU/Linux 2.4.9, Mandrake 8.0
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+[zChaff binary for Solaris]({{< baseurl >}}/resources/zchaff2001217solaris)
+{{< tdclose >}}
+{{< tdopen >}}
+
+
+1.  Download the gzipped file
+2.  Execute: gunzip zchaff.2001.2.17.solaris.gz
+3.  Execute: chmod +x zchaff.2001.2.17.solaris
+4.  To Run: ./zchaff.2001.2.17.solaris test1.dimacs
+
+
+{{< tdclose >}}
+{{< tdopen >}}
+Athena
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+[zChaff C++ source code]({{< baseurl >}}/resources/zchaff2001217srctar)
+{{< tdclose >}}
+{{< tdopen >}}
+
+
+1.  Download the gzipped tar file
+2.  Execute: gunzip zchaff.2001.2.17.src.tar.gz
+3.  Execute: tar -xvf zchaff.2001.2.17.src.tar
+4.  Execute: make  
+    or  
+    make TARGET
+5.  To Run: ./asap test1.dimacs
+
+
+{{< tdclose >}}
+{{< tdopen >}}
+Compiles and runs on Debian GNU/Linux 2.4.9 and Mandrake 8.0, but not on RedHat 6.2.  
+Requires libstdc++-libc6.1-2.so.3
+{{< tdclose >}}
+
+{{< trclose >}}
+
+{{< tableclose >}}
 
 What remains is to turn sentences in our CNF format into DIMACS format, and to turn zChaff's assignments into Interpretations for the original sentences.  
 We have written routines to do the two conversions as part of the ; techniques.PL.CNF class.  
